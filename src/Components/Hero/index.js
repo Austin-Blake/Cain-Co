@@ -16,8 +16,8 @@ export const Hero = () => {
             <Sidebar isOpen={isOpen} toggle={ toggle}/>
             <HeroContent>
                 <HeroItems>
-                    <HeroH1>Greatest Pizza Ever</HeroH1>
-                    <HeroP>Ready in 60 seconds</HeroP>
+                    <HeroH1>Looking for your next</HeroH1>
+                    <HeroP>Fashion Statement?</HeroP>
                     <HeroBtn>Place Order</HeroBtn>
                 </HeroItems>
             </HeroContent>

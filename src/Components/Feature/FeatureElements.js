@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import FeaturePic from '../../Images/featured3.jpg'
+import FeaturePic from '../../Images/jason-briscoe-w2uvoJo_woE-unsplash.jpg'
 
 
 export const FeatureContainer = styled.div`

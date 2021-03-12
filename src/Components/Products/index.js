@@ -14,12 +14,12 @@ import {
     ProductButton
 } from './ProductsElements';
 
-export const Products = ({ heading, data }) => {
+export const Products = ({ heading }) => {
     const myContext = useContext(MyContext);
-    const { getProducts, loading } = myContext;
+    const { getProducts, loading, products } = myContext;
 
     useEffect(() => {
-    //    getProducts();
+       getProducts();
     }, []);
 
 
@@ -27,15 +27,15 @@ export const Products = ({ heading, data }) => {
         <ProductsContainer>
             <ProductsHeading>{heading}</ProductsHeading>
             <ProductWrapper>
-                {data.map((product, index) => {
+                {products.map((product) => {
                     return (
-                        <ProductCard key={index}>
-                            <ProductImg src={product.img} alt={product.alt}/>
+                        <ProductCard key={product.id}>
+                            <ProductImg src={product.image} alt={product.title}/>
                             <ProductInfo>
-                                <ProductTitle>{product.name}</ProductTitle>
-                                <ProductDesc>{product.desc}</ProductDesc>
+                                <ProductTitle>{product.title}</ProductTitle>
+                                {/* <ProductDesc>{product.description}</ProductDesc> */}
                                 <ProductPrice>{product.price}</ProductPrice>
-                                <ProductButton>{product.button}</ProductButton>
+                                <ProductButton>Add To Cart</ProductButton>
                             </ProductInfo>
                         </ProductCard>  
                     )

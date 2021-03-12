@@ -6,7 +6,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { GlobalStyle } from './globalStyles';
 import { Hero } from './Components/Hero';
 import { Products } from './Components/Products';
-import {productData, productDataTwo} from './Components/Products/data'
 import { Feature } from './Components/Feature';
 import { Footer } from './Components/Footer';
 import Provider from './Context/Provider'
@@ -17,9 +16,9 @@ const App = () => {
       <Router>
         <GlobalStyle/>
         <Hero />
-        <Products heading='Choose your favorite' data={ productData}/>
+        <Products heading='Choose your favorite'/> 
         <Feature />
-        <Products heading="Sweet Treats for you" data={productDataTwo} />
+        {/* <Products heading="Sweet Treats for you" /> */}
         <Footer/>
         </Router>
     </Provider>

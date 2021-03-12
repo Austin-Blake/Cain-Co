@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { NavLink as Link } from 'react-router-dom';
-import {FaPizzaSlice} from 'react-icons/fa'
+import {FaAngleDown} from 'react-icons/fa'
 
 export const Nav = styled.nav`
 background: transparent;
@@ -12,7 +12,7 @@ font-weight: 700;
 
 export const NavLink = styled(Link)`
 color: white;
-font-size: 2rem;
+font-size: 4rem;
 display: flex;
 align-items: center;
 text-decoration: none;
@@ -39,7 +39,8 @@ p{
 }
 `;
 
-export const Bars = styled(FaPizzaSlice)`
+export const Bars = styled(FaAngleDown)`
+color: red;
 font-size: 2rem;
 transform: translate(-50%, -15%);
 `;

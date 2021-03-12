@@ -1,5 +1,9 @@
 import styled from 'styled-components';
-import ImgBg from '../../Images/pizza-3.jpg'
+import ImgBg from '../../Images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg';
+
+
+    
+
 
 export const HeroContainer = styled.div`
 background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${ImgBg});
@@ -42,8 +46,10 @@ letter-spacing: 3px;
 `;
 
 export const HeroP = styled.p`
-font-size: clamp(2rem, 2.5vw, 3rem);
+font-size: clamp(4rem, 4.5vw, 8rem);
 margin-bottom:2rem;
+color: red;
+text-align: center;
 `;
 
 export const HeroBtn = styled.button`
