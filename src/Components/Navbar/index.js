@@ -1,15 +1,28 @@
-import React from 'react';
-import {Bars, Nav, NavLink, NavIcon} from './NavbarElements'
+import React, {useState} from 'react';
+import { Nav, NavLink, NavIcon, Icon, CartIcon } from './NavbarElements'
+import { Sidebar } from '../Sidebar';
+import {Link} from 'react-router-dom';
 
-export const Navbar = ({toggle}) => {
+export const Navbar = () => {
+    
+    const [isOpen, setIsOpen] = useState(false);
+    
+    const toggle = () => {
+       return setIsOpen(!isOpen);
+    };
+    
     return (
         <div>
             <Nav>
-                <NavLink to="/">Cain's Outlet</NavLink>
-                <NavIcon onClick={toggle}>
-                    <p>Menu</p>
-                    <Bars />
-                </NavIcon> 
+                <Sidebar isOpen={isOpen} toggle={toggle} />
+                    <NavLink to="/">Cain & Co.</NavLink>
+                    <Icon />
+                <NavIcon onClick={() => toggle()}>
+                    <p>&#9776;</p>
+                </NavIcon>
+                <Link to="/cart">
+                    <CartIcon />
+                </Link>
             </Nav>
         </div>
     )

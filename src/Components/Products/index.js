@@ -1,6 +1,7 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import MyContext from '../../Context/MyContext';
-
+// import { Link, Switch, Route } from 'react-router-dom'
+// import {ProductDetails} from '../ProductDetail';
 import {
     ProductsContainer,
     ProductsHeading,
@@ -8,34 +9,28 @@ import {
     ProductCard,
     ProductImg,
     ProductInfo,
-    ProductTitle,
-    ProductDesc,
+    ProductTitleLink,
     ProductPrice,
-    ProductButton
 } from './ProductsElements';
 
 export const Products = ({ heading }) => {
     const myContext = useContext(MyContext);
-    const { getProducts, loading, products } = myContext;
+    const {products} = myContext;
 
-    useEffect(() => {
-       getProducts();
-    }, []);
 
 
     return (
+        
         <ProductsContainer>
-            <ProductsHeading>{heading}</ProductsHeading>
+            <ProductsHeading>Cain's Catalog</ProductsHeading>
             <ProductWrapper>
                 {products.map((product) => {
                     return (
-                        <ProductCard key={product.id}>
-                            <ProductImg src={product.image} alt={product.title}/>
-                            <ProductInfo>
-                                <ProductTitle>{product.title}</ProductTitle>
-                                {/* <ProductDesc>{product.description}</ProductDesc> */}
+                        <ProductCard key={product.styleId}>
+                            <ProductImg src={product.image} alt={product.productName}/>
+                            <ProductInfo>     
+                                <ProductTitleLink to={`/products/${product.styleId}`}>{product.productName}</ProductTitleLink>
                                 <ProductPrice>{product.price}</ProductPrice>
-                                <ProductButton>Add To Cart</ProductButton>
                             </ProductInfo>
                         </ProductCard>  
                     )

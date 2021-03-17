@@ -1,11 +1,10 @@
 import styled from 'styled-components'
-import FeaturePic from '../../Images/jason-briscoe-w2uvoJo_woE-unsplash.jpg'
+import FeaturePic from '../../Images/yoshi-takekawa-7wk0ja-DP_c-unsplash.jpg'
 
 
 export const FeatureContainer = styled.div`
 background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${FeaturePic});
-height: 100vh;
-max-height: 500px;
+height: 100%;
 background-position: center;
 background-size: cover;
 display: flex;
@@ -28,6 +27,7 @@ p{
 
 export const FeatureButton = styled.button`
 font-size: 1.4rem;
+margin: 1rem 2rem;
 padding: .6rem 3rem;
 border: none;
 background: #ffc500;
@@ -40,4 +40,12 @@ transition: 200ms ease-out;
     transition: 200ms ease-out;
     cursor: pointer;
 }
+`;
+
+export const FeaturedImage = styled.img`
+height: 20rem;
+width: 20rem;
+opacity: .9;
+background-color: white;
+box-shadow:0 0 20px 10px #a9a9a9;
 `;

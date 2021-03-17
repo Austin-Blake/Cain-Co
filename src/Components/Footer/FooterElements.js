@@ -6,7 +6,6 @@ background-color: #ad0909;
 `;
 
 export const FooterWrap = styled.div`
-padding: 2rem 4rem;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -32,14 +31,14 @@ margin: 2rem auto 0 auto;
 `;
 
 export const SocialLogo = styled(Link)`
+font-family: Satisfy;
 color: white;
-justify-self: start;
 cursor: pointer;
 text-decoration: none;
 font-size: 1.5rem;
 display: flex;
 align-items: center;
-margin-bottom: 2rem;
+margin-bottom: 1rem;
 font-weight: bold;
 `;
 

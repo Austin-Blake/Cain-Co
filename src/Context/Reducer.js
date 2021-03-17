@@ -17,9 +17,31 @@ const reducer = (state, action) => {
                 ...state,
                 loading: false
             }
+            case 'ADD_TO_CART':
+                return {
+                    ...state,
+                    cart: state.cart.concat(action.payload),
+            }
+            case 'DELETE_FROM_CART':
+                return {
+                    ...state,
+                    cart: state.cart.filter(item => {
+                        return item.id !== action.payload.styleId;
+                    }),
+            }
+            case 'EMPTY_CART':
+                return {
+                    ...state,
+                    cart: [],
+            }
+        case 'SET_ITEM':
+            return {
+                ...state,
+                productItem: action.payload,
+            }
     
         default:
-            break;
+            return state;
     }
 };
 
