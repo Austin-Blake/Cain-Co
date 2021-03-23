@@ -1,4 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
+import {filterCart, filterPayload} from '../../Context/helper'
 import MyContext from '../../Context/MyContext';
 import {
     ProductsContainer,
@@ -13,57 +14,69 @@ import {
     ProductBrand,
     ProductPrice,
     ProductSizes,
+    ProductSize,
 SizeWrapper,
 ProductButton} from './ProductDetailElements';
 
 export const ProductDetails = ({match}) => {
     const myContext = useContext(MyContext);
-    const { products, dispatch, cart } = myContext;
-
+    const { products, dispatch, cart, state} = myContext;
+    const [size, setSize] = useState();
     
     //filter products array for product id that matches Router (match.params.id)
     //to get the right product to display
 
-    //Attempting to fix undefined product[0] with adding to global state
     
-      let item = products.filter(product => product.styleId === match.params.id);
-      const [productItem, setProductItem] = useState(item);
+    let displayItem = products.filter(product => product.styleId === match.params.id);
+    //reduce filter output to single object
+    let item = displayItem[0];
+ 
+
+    console.log('cart:', cart);
+    console.log('Item', item);
+    
     useEffect(() => {
-        setProductItem(item);
-        dispatch({type: 'SET_ITEM', payload: productItem})
-    console.log(cart);
-    console.log(item);
-    console.log(productItem);
+        console.log('filterCart2', filterCart(state.cart))
+        console.log('filterPayload2', filterPayload(item))
     },[cart])
-    
 
     return (
         
         <ProductsContainer>
-            <ProductBrand>Made by: {productItem[0].brand}</ProductBrand>
+            <ProductBrand>Made by: {item.brand}</ProductBrand>
             <ProductWrapper>
-                <ProductImg src={productItem[0].image} alt={productItem[0].productName}/>
+                <ProductImg src={item.image} alt={item.productName}/>
                 <ProductCard>
                     <ProductInfo>
-                        <ProductTitle>{productItem[0].productName}</ProductTitle>
-                        <ProductDesc>{productItem[0].description}</ProductDesc>
+                        <ProductTitle>{item.productName}</ProductTitle>
+                        <ProductDesc>{item.description}</ProductDesc>
                     </ProductInfo>
                     <hr></hr>
                     <DetailWrapper>
-                    {productItem[0].details.map(item => {
-                           return <ProductDetail>{item}</ProductDetail>
+                    {item.details.map(product => {
+                           return <ProductDetail>{product}</ProductDetail>
                     })}
                     </DetailWrapper>
                     <SizeWrapper>
-                        {productItem[0].size.map(item => {
-                            return <ProductSizes>{item}</ProductSizes>
+                        {item.size.map((product) => {
+                            return <ProductSizes value={product} onClick={(e) => setSize(item.currentSize = parseInt(e.target.value)) }>{product}</ProductSizes>
                         })}
                     </SizeWrapper>
+                    <ProductSize> {size}</ProductSize>
                     <DetailWrapper>
-                        <ProductPrice>{productItem[0].price}</ProductPrice>
+                        <ProductPrice>{item.price}</ProductPrice>
+                        <button onClick={() => dispatch({ type: 'INCREMENT', payload: item })}>Add</button>
+
+                        <h4>Amount: <span>{item.amount}</span></h4>
+                        
+                        <button onClick={() => item.amount >= 2 ? dispatch({ type: 'DECREMENT', payload: item }) : null}>Delete</button>
+                        
                         <ProductButton onClick={() => {
-                            return productItem[0] ? dispatch({ type: 'ADD_TO_CART', payload: productItem[0] }) : null;
+                            item.id = Date.now();
+                            dispatch({ type: 'ADD_TO_CART', payload: item });
+                            
                         }}>Add to Cart</ProductButton>
+                        
                     </DetailWrapper>
                 </ProductCard>  
              </ProductWrapper>

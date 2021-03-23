@@ -7,7 +7,7 @@ background: transparent;
 height: 4rem;
 margin: 1rem;
 display: flex;
-justify-content: space-evenly;
+justify-content: space-between;
 align-items: center;
 font-weight: 700;
 
@@ -49,14 +49,15 @@ p{
 }
 
 &:hover{
+    transform: scale(.8, .7);
     transition: 300ms ease-out;
     color: red;
 }
 `;
 export const Icon = styled(FaRedhat)`
 color: #c20a0a;
-font-size: 4rem;
-margin-left: 3rem;
+font-size: 2rem;
+margin-left: -15rem;
 
 @media screen and (max-width: 500px){
     display: none;
@@ -64,11 +65,22 @@ margin-left: 3rem;
 `;
 
 export const CartIcon = styled(FaShoppingCart)`
-color: #c20a0a;
-font-size: 4rem;
-margin-left: 3rem;
+margin-top: 3rem ;
+color: #050505;
+padding: .3rem;
+border: 1px solid black;
+border-radius: 30%;
+font-size: 2rem;
+
+&:hover{
+    transform: scale(1.3);
+    transition: 300ms ease-out;
+    color: #ff0000;
+}
 
 @media screen and (max-width: 500px){
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 84%;
 }
 `;

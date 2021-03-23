@@ -8,8 +8,8 @@ import {products} from '../Components/Data/data'
 const Provider = ({ children }) => {
     const initialState = {
         products: products,
-        loading: false,
         cart: [],
+        total: 0,
     };
 
     const [state, dispatch] =
@@ -28,15 +28,15 @@ const Provider = ({ children }) => {
     //     }
     // }
     
-    
 
     return (
         <MyContext.Provider value={{
             products: state.products,
-            loading: state.loading,
             cart: state.cart,
             productItem: state.productItem,
+            total: state.total,
             dispatch,
+            state,
         }}>
             {children}
         </MyContext.Provider>

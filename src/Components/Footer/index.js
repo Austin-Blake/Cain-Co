@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom'
+import {CartIcon} from '../Navbar/NavbarElements'
 import {
     FaFacebook,
     FaInstagram,
@@ -38,7 +40,11 @@ export const Footer = () => {
                         </SocialIcons>
                     </SocialMediaWrap>
                 </SocialMedia>
+                <Link to="/cart">
+                <CartIcon />
+                </Link>
             </FooterWrap>
+            
         </FooterContainer>
     )
 }

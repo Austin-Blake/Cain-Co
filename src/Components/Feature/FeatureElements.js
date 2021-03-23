@@ -4,7 +4,7 @@ import FeaturePic from '../../Images/yoshi-takekawa-7wk0ja-DP_c-unsplash.jpg'
 
 export const FeatureContainer = styled.div`
 background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${FeaturePic});
-height: 100%;
+height: 100vh;
 background-position: center;
 background-size: cover;
 display: flex;

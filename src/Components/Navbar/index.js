@@ -21,7 +21,7 @@ export const Navbar = () => {
                     <p>&#9776;</p>
                 </NavIcon>
                 <Link to="/cart">
-                    <CartIcon />
+                <CartIcon />
                 </Link>
             </Nav>
         </div>

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import {Link} from 'react-router-dom'
 
 
 
@@ -68,6 +67,15 @@ color: red;
 
 &:before{
     content: '$ ';
+}
+`;
+export const ProductSize = styled.p`
+text-align: center;
+margin: 1rem;
+font-size: 1rem;
+
+&:before{
+    content: 'Current Size:';
 }
 `;
 

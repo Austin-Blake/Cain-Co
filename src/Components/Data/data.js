@@ -1,5 +1,6 @@
 export const products = [
     {
+        id: '',
         styleId: '814-4201',
         brand: 'Thorogood',
         gender: 'Men',
@@ -18,9 +19,12 @@ export const products = [
         price: '225.00',
         size: [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13],
         sale: '',
-        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/thorogood-mens-8-moc-toe-wedge-non-safety-toe-mens-bootlace-worknon-safety-weinbrenner-shoe-co-inc-793795_1800x1800.jpg?v=1600974307'
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/thorogood-mens-8-moc-toe-wedge-non-safety-toe-mens-bootlace-worknon-safety-weinbrenner-shoe-co-inc-793795_1800x1800.jpg?v=1600974307',
+        amount: 1,
+        
     },
     {
+        id: '',
         styleId: '814-3800',
         brand: 'Thorogood',
         gender: 'Men',
@@ -38,9 +42,12 @@ export const products = [
         price: '255.00',
         size: [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13],
         sale: '',
-        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/thorogood-mens-1957-series-briar-pitstop-8-waterproof-moc-toe-mens-lacewaterprf-non-safety-weinbrenner-shoe-co-inc-138698_1800x1800.jpg?v=1600788128'
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/thorogood-mens-1957-series-briar-pitstop-8-waterproof-moc-toe-mens-lacewaterprf-non-safety-weinbrenner-shoe-co-inc-138698_1800x1800.jpg?v=1600788128',
+        amount: 1,
+        
     },
     {
+        id: '',
         styleId: '10001200',
         brand: 'Ariat',
         gender: 'Men',
@@ -59,9 +66,12 @@ export const products = [
         price: '199.99',
         size: [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13],
         sale: '',
-        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/ariat-mens-10-workhogr-pull-on-h2o-round-composite-toe-mens-workcomp-toewstrn-work-ariat-international-inc-263185_1800x1800.jpg?v=1600811431'
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/ariat-mens-10-workhogr-pull-on-h2o-round-composite-toe-mens-workcomp-toewstrn-work-ariat-international-inc-263185_1800x1800.jpg?v=1600811431',
+        amount: 1,
+        
     },
     {
+        id: '',
         styleId: '7835',
         brand: 'Laredo',
         gender: 'Men',
@@ -77,9 +87,12 @@ export const products = [
         price: '160.50',
         size: [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13],
         sale: '144.99',
-        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/laredo-mens-11-durant-broad-square-toe-mens-western-squaretoe-dan-post-boot-company-975851_1800x1800.jpg?v=1600803761'
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/laredo-mens-11-durant-broad-square-toe-mens-western-squaretoe-dan-post-boot-company-975851_1800x1800.jpg?v=1600803761',
+        amount: 1,
+        
     },
     {
+        id: '',
         styleId: 'CA5821',
         brand: 'Carolina',
         gender: 'Men',
@@ -89,9 +102,12 @@ export const products = [
         price: '154.99',
         size: [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13],
         sale: '',
-        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/carolina-mens-8-waterproof-insulated-logger-round-non-safety-toe-mens-laceinsulatednon-safety-carolina-shoe-company-572253_1800x1800.jpg?v=1600818188'
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/carolina-mens-8-waterproof-insulated-logger-round-non-safety-toe-mens-laceinsulatednon-safety-carolina-shoe-company-572253_1800x1800.jpg?v=1600818188',
+        amount: 1,
+        
     },
     {
+        id: '',
         styleId: 'MTH0026',
         brand: 'Twisted X',
         gender: 'Mens',
@@ -101,9 +117,12 @@ export const products = [
         price: '199.99',
         size: [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13],
         sale: '',
-        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/twisted-x-mens-11-top-hand-western-boot-square-toe-mens-western-squaretoe-twisted-x-boots-759719_1800x1800.jpg?v=1600806266'
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/twisted-x-mens-11-top-hand-western-boot-square-toe-mens-western-squaretoe-twisted-x-boots-759719_1800x1800.jpg?v=1600806266',
+        amount: 1,
+        
     },
     {
+        id: '',
         styleId: 'DB4443',
         brand: 'Durango',
         gender: 'Men',
@@ -124,9 +143,12 @@ export const products = [
         price: '175.00',
         size: [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13],
         sale: '164.99',
-        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/durango-mens-12-rebel-square-toe-mens-western-squaretoe-durango-boot-493296_1800x1800.jpg?v=1600815649'
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/durango-mens-12-rebel-square-toe-mens-western-squaretoe-durango-boot-493296_1800x1800.jpg?v=1600815649',
+        amount: 1,
+        
     },
     {
+        id: '',
         styleId: '10010963',
         brand: 'Ariat',
         gender: 'Men',
@@ -137,9 +159,12 @@ export const products = [
         price: '159.99',
         size: [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13],
         sale: '',
-        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/ariat-mens-11-sport-distressed-brown-wide-square-toe-mens-western-squaretoe-ariat-international-inc-109687_356x488.jpg?v=1600804489'
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/ariat-mens-11-sport-distressed-brown-wide-square-toe-mens-western-squaretoe-ariat-international-inc-109687_356x488.jpg?v=1600804489',
+        amount: 1,
+        
     },
     {
+        id: '',
         styleId: 'SV2534',
         brand: 'Justin',
         gender: 'Men',
@@ -158,9 +183,12 @@ export const products = [
         price: '199.99',
         size: [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13],
         sale: '179.99',
-        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/justin-mens-12-whiskey-buffalo-wide-square-toe-mens-western-squaretoe-justin-boot-co-232667_1800x1800.jpg?v=1600807044'
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/justin-mens-12-whiskey-buffalo-wide-square-toe-mens-western-squaretoe-justin-boot-co-232667_1800x1800.jpg?v=1600807044',
+        amount: 1,
+        
     },
     {
+        id: '',
         styleId: '3235',
         brand: 'Justin',
         gender: 'Men',
@@ -174,9 +202,12 @@ export const products = [
         price: '209.99',
         size: [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13],
         sale: '179.95',
-        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/justin-mens-10-brock-desert-roper-toe-mens-bootwestern-hand-made-justin-boot-co-722627_1800x1800.jpg?v=1600796397'
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/justin-mens-10-brock-desert-roper-toe-mens-bootwestern-hand-made-justin-boot-co-722627_1800x1800.jpg?v=1600796397',
+        amount: 1,
+        
     },
     {
+        id: '',
         styleId: 'DP69681',
         brand: 'Dan Post',
         gender: 'Men',
@@ -195,6 +226,8 @@ export const products = [
         price: '189.99',
         size: [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13],
         sale: '',
-        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/dan-post-mens-12-alburquerque-waterproof-broad-toe-mens-bootwatrproofnon-safety-dan-post-boot-company-176681_1800x1800.jpg?v=1600974680'
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/dan-post-mens-12-alburquerque-waterproof-broad-toe-mens-bootwatrproofnon-safety-dan-post-boot-company-176681_1800x1800.jpg?v=1600974680',
+        amount: 1,
+        
     },
     ];
