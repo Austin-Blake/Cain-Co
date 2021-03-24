@@ -1,5 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
-import {filterCart, filterPayload} from '../../Context/helper'
+import React, { useContext, useState } from 'react';
 import MyContext from '../../Context/MyContext';
 import {
     ProductsContainer,
@@ -20,7 +19,7 @@ ProductButton} from './ProductDetailElements';
 
 export const ProductDetails = ({match}) => {
     const myContext = useContext(MyContext);
-    const { products, dispatch, cart, state} = myContext;
+    const { products, dispatch} = myContext;
     const [size, setSize] = useState();
     
     //filter products array for product id that matches Router (match.params.id)
@@ -31,14 +30,6 @@ export const ProductDetails = ({match}) => {
     //reduce filter output to single object
     let item = displayItem[0];
  
-
-    console.log('cart:', cart);
-    console.log('Item', item);
-    
-    useEffect(() => {
-        console.log('filterCart2', filterCart(state.cart))
-        console.log('filterPayload2', filterPayload(item))
-    },[cart])
 
     return (
         
@@ -65,15 +56,19 @@ export const ProductDetails = ({match}) => {
                     <ProductSize> {size}</ProductSize>
                     <DetailWrapper>
                         <ProductPrice>{item.price}</ProductPrice>
-                        <button onClick={() => dispatch({ type: 'INCREMENT', payload: item })}>Add</button>
+                        <button onClick={() => { dispatch({ type: 'INCREMENT', payload: item }); item.id = Date.now(); }}>Add</button>
 
                         <h4>Amount: <span>{item.amount}</span></h4>
                         
                         <button onClick={() => item.amount >= 2 ? dispatch({ type: 'DECREMENT', payload: item }) : null}>Delete</button>
                         
                         <ProductButton onClick={() => {
-                            item.id = Date.now();
-                            dispatch({ type: 'ADD_TO_CART', payload: item });
+                            if (item.currentSize && item.amount > 0) {
+                                item.id = Date.now();
+                                dispatch({ type: 'ADD_TO_CART', payload: item });
+                            } else {
+                                return null
+                            }
                             
                         }}>Add to Cart</ProductButton>
                         

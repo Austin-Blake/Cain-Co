@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 import MyContext from '../../Context/MyContext';
+import {CategoryList} from '../Category/CategoryList'
+
 import {
     ProductsContainer,
     ProductsHeading,
@@ -9,20 +11,25 @@ import {
     ProductInfo,
     ProductTitleLink,
     ProductPrice,
-} from './ProductsElements';
+} from './CategoryElements';
 
-export const Products = () => {
+export const Category = () => {
     const myContext = useContext(MyContext);
-    const {products} = myContext;
-
-
+    const { products, brand } = myContext;
+    
+    const filterBrands = products.filter((product) => {
+        return product.brand.toLowerCase() === brand.toLowerCase();
+    });
+    
 
     return (
-        
+        <>
+            <CategoryList />
+            <ProductsHeading></ProductsHeading>
         <ProductsContainer>
             <ProductsHeading>Cain's Catalog</ProductsHeading>
             <ProductWrapper>
-                {products.map((product) => {
+                {filterBrands.map((product) => {
                     return (
                         <ProductCard key={product.styleId}>
                             <ProductImg src={product.image} alt={product.productName}/>
@@ -34,6 +41,7 @@ export const Products = () => {
                     )
                 })}
             </ProductWrapper>
-        </ProductsContainer>
+            </ProductsContainer>
+            </>
     )
 }

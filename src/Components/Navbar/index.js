@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import { Nav, NavLink, NavIcon, Icon, CartIcon } from './NavbarElements'
 import { Sidebar } from '../Sidebar';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 
 export const Navbar = () => {
     
@@ -15,6 +16,7 @@ export const Navbar = () => {
         <div>
             <Nav>
                 <Sidebar isOpen={isOpen} toggle={toggle} />
+            
                     <NavLink to="/">Cain & Co.</NavLink>
                     <Icon />
                 <NavIcon onClick={() => toggle()}>

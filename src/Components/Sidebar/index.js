@@ -4,7 +4,7 @@ import {
     Icon,
      CloseIcon,
      SidebarMenu,
-     SidebarLink
+    SidebarLink,
 } from './SidebarElements';
 
 export const Sidebar = ({isOpen, toggle}) => {
@@ -16,9 +16,9 @@ export const Sidebar = ({isOpen, toggle}) => {
                 <CloseIcon onClick={() => toggle()}/>
             </Icon>
             <SidebarMenu>
-                    <SidebarLink to='/' exact={'true'} onClick={() => toggle()}>Home</SidebarLink>
+                <SidebarLink to='/' exact={'true'} onClick={() => toggle()}>Home</SidebarLink>
+                <SidebarLink to='/category' onClick={() => toggle()}>Shop by Brand</SidebarLink>
                     <SidebarLink to='/products' onClick={() => toggle()}>Products</SidebarLink>
-                    <SidebarLink to='/category' onClick={() => toggle()}>Shop by Brand</SidebarLink>
                     <SidebarLink to='/about' onClick={() => toggle()}>About</SidebarLink>
             </SidebarMenu>
         </SidebarContainer>

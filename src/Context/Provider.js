@@ -1,7 +1,7 @@
-import React, { useReducer } from 'react';
+import React, { useReducer, useState } from 'react';
 import MyContext from './MyContext';
-import reducer from './Reducer'
-import {products} from '../Components/Data/data'
+import reducer from './Reducer';
+import { products } from '../Components/Data/data';
 
 
 
@@ -11,9 +11,13 @@ const Provider = ({ children }) => {
         cart: [],
         total: 0,
     };
+    const [brand, setBrand] = useState('Justin');
 
     const [state, dispatch] =
         useReducer(reducer, initialState);
+    
+    //Async Function to retrieve data from API//
+    //Never used because data is hard coded in program//
     
     // const getProducts = async () => {
     //     try {
@@ -37,6 +41,8 @@ const Provider = ({ children }) => {
             total: state.total,
             dispatch,
             state,
+            brand,
+            setBrand
         }}>
             {children}
         </MyContext.Provider>

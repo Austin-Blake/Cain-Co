@@ -7,12 +7,12 @@ background: transparent;
 height: 4rem;
 margin: 1rem;
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 align-items: center;
 font-weight: 700;
 
 @media screen and (max-width: 400px){
-    justify-content: center;
+    justify-content: space-between;
 }
 `;
 

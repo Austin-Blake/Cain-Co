@@ -5,6 +5,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 height: 100%;
+min-height: 100vh;
 `;
 
 export const ItemContainer = styled.div`
@@ -44,6 +45,13 @@ justify-content: space-around;
 export const TotalContainer = styled.div`
 display: flex;
 flex-direction: column;
+`;
+export const CartDiv = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
 `;
 
 export const QuantityButton = styled.button`

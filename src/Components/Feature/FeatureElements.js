@@ -4,7 +4,7 @@ import FeaturePic from '../../Images/yoshi-takekawa-7wk0ja-DP_c-unsplash.jpg'
 
 export const FeatureContainer = styled.div`
 background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${FeaturePic});
-height: 100vh;
+height: 100%;
 background-position: center;
 background-size: cover;
 display: flex;
@@ -13,15 +13,19 @@ justify-content: center;
 align-items: center;
 color: white;
 text-align: center;
-padding:0 1rem;
+padding: 0 1rem;
 
 h1{
     font-size: clamp(3rem, 5vw, 5rem);
 }
 
 p{
-    margin-bottom: 1rem;
-    font-size: clamp(1rem, 3vw, 2rem);
+    margin: 1rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+div{
+    height: 100%;
 }
 `;
 
@@ -43,8 +47,8 @@ transition: 200ms ease-out;
 `;
 
 export const FeaturedImage = styled.img`
-height: 20rem;
-width: 20rem;
+height: 70%;
+width: 50%;
 opacity: .9;
 background-color: white;
 box-shadow:0 0 20px 10px #a9a9a9;

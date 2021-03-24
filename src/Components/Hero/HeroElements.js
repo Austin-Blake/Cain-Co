@@ -2,14 +2,11 @@ import styled from 'styled-components';
 import ImgBg from '../../Images/james-sullivan-ESZRBtkQ_f8-unsplash.jpg';
 
 
-    
-
-
 export const HeroContainer = styled.div`
 background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.4), rgba(0,0,0,0.1)), url(${ImgBg});
 background-position: center;
 background-size: cover;
-height: 100vh;
+height: 110vh;
 min-height: 100%;
 `;
 

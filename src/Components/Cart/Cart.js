@@ -12,12 +12,12 @@ import {
     ItemH4,
     Span,
     InfoContainer,
+    CartDiv,
 } from './CartElements'
 
 export const Cart = () => {
     const myContext = useContext(MyContext);
     const { dispatch, cart, total } = myContext;
-    console.log('Cart:',cart);
 
     useEffect(() => {
         dispatch({ type: 'TOTAL' });
@@ -59,8 +59,11 @@ export const Cart = () => {
         } else {
             return (
                 <CartContainer>
-                <span>Balance: ${total}</span>
-                <CartStatus>Cart is empty</CartStatus>
+                    <CartDiv>
+                    <Span>Balance: ${total}</Span>
+                    <CartStatus>Cart is empty</CartStatus>
+                    </CartDiv>
+                
                 </CartContainer>)
         }
 }

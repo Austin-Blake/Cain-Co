@@ -25,7 +25,7 @@ export const Hero = () => {
 
     return (
         <>
-        <HeroContainer>
+            <HeroContainer>
             <HeroContent>
                 <HeroItems>
                     <HeroH1>Looking for your next Pair of Boots?</HeroH1>

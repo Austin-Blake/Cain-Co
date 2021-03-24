@@ -10,7 +10,9 @@ import {ProductDetails} from './Components/ProductDetail';
 import {Navbar} from './Components/Navbar';
 import { Footer } from './Components/Footer';
 import Provider from './Context/Provider'
-import {Cart} from './Components/Cart/Cart';
+import { Cart } from './Components/Cart/Cart';
+import { Category } from './Components/Category/Category'
+
 
 const App = () => {
   
@@ -23,7 +25,9 @@ const App = () => {
           <Route path="/" exact component={Hero} />
           <Route path="/products" exact component={Products} />
           <Route path="/products/:id" exact component={ProductDetails} />
+          <Route path="/category" exact component={Category} />
           <Route path="/cart" component={Cart} />
+          
         </Switch>
         <Footer/>
       </Router>
