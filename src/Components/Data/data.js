@@ -4,7 +4,7 @@ export const products = [
         styleId: '814-4201',
         brand: 'Thorogood',
         gender: 'Men',
-        productName: 'Thorogood Men’s 8” Moc Toe Wedge – Soft Toe',
+        productName: '8” Moc Toe Wedge – Soft Toe',
         description: 'Proudly Handcrafted in the USA, the Thorogood 814-4201 is both Electrical Hazard Rated and slip resistant with a composite shank. The rubber insole combined with the MAXwear Wedge™ outsole absorbs shock and provides long lasting comfort on the job!',
         details: ['Slip Resisting',
             'Made in the USA',
@@ -28,7 +28,7 @@ export const products = [
         styleId: '814-3800',
         brand: 'Thorogood',
         gender: 'Men',
-        productName: `Thorogood Men's - 1957 Series Briar Pitstop 8" Waterproof - Moc toe`,
+        productName: `1957 Series Briar Pitstop 8" Waterproof - Moc toe`,
         description: ``,
         details: [
             'Briar Pitstop, full-grain leather',
@@ -51,7 +51,7 @@ export const products = [
         styleId: '10001200',
         brand: 'Ariat',
         gender: 'Men',
-        productName: 'Ariat Men’s 10” Workhog® Pull On H2O - Round Composite Toe',
+        productName: '10” Workhog® Pull On H2O - Round Composite Toe',
         description: 'Built strong so you can live strong! Ariat Men’s 10001200 Workhog® H2O is a composition safety toe version of the 100001198, and is fortified by ATS Max® Technology, which utilizes a gel-cushioned footbed and heel stabilizer to guarantee support, rebound, and stability and its EVA midsole is shock-absorbing. The extra wide shank has forefoot and heel stabilizers for premium support, while an oil and slip resistant Duratread™ rubber outsole provides wear resistance and flexibility. The WaterproofPRO™ construction and composite safety toe equip you to confront rugged work environments. The Workhog® H2O performs well in harsh outdoor work environments and is useful for oil and gas exploration.',
         details: ['WaterproofPRO™ Construction with Waterproof Full-Grain Leather Upper',
             'Mesh Lining',
@@ -75,7 +75,7 @@ export const products = [
         styleId: '7835',
         brand: 'Laredo',
         gender: 'Men',
-        productName: 'Laredo Mens 11 Durant - Broad Square Toe',
+        productName: `11" Durant - Broad Square Toe`,
         description: '',
         details: [
             `11" shaft`,
@@ -96,7 +96,7 @@ export const products = [
         styleId: 'CA5821',
         brand: 'Carolina',
         gender: 'Men',
-        productName: 'Carolina Mens 8" Waterproof Insulated Logger - Round Non-Safety Toe',
+        productName: '8" Waterproof Insulated Logger - Round Non-Safety Toe',
         description: 'Timber! Falling logs, inclement weather, rough terrian and hazardous equipment make the logging industry one of the toughest jobs out there. These Carolina Mens CA5821 Logger Boots are up to any challenge. They combat the dangers of falling tree and rolling logs with their ASTM approved steel toes; they conquer rain and snow with their Thinsulate™ insulation and waterproof SCUBALINER™. Its rubber lug outsole is prepared to grip branches, ladders and slippery slopes; and the electrical hazard protection of these leather boots will protect you from shock.',
         details: ['Copper Crazy Horse Leather Upper', 'Waterproof SCUBALINER™','ailbrelle Lined','600 Grams of Thinsulate™ Insulation','Triple-Rib Steel Shank','Welt Construction','Electrical Hazard Rated','Oil Resisting One-Piece Rubber Lug Outsole','Logger Features: Retooled Eyelets, Indestructible Laces, Fortified Hooks, Superior Outsole Adhesion, and Durable Leather','8 Inches',],
         price: '154.99',
@@ -111,7 +111,7 @@ export const products = [
         styleId: 'MTH0026',
         brand: 'Twisted X',
         gender: 'Mens',
-        productName: 'Twisted X Mens - 11 Top Hand Western Boot - Square Toe ',
+        productName: `11" Top Hand Western Boot - Square Toe `,
         description: '11" Square Toe',
         details: ['Full-grain leather vamp and 11″ shaft.', 'WS Toe', 'Reinforced leather pull holes.', 'Air-mesh lined shaft for improved breathability and moisture wicking.', 'Taped interior seams for added comfort.', 'Removable, moisture-wicking, antibacterial and machine washable SD footbed.', 'Full-length composite XSD insole provides maximum support and stability beyond that of a traditional shank.', 'Molded rubber midsole.', '1 3/8″ tall molded rubber heel, 3 3/4″ long base for stability.', 'One-piece molded rubber outsole and heel for added durability and slip resistance.',],
         price: '199.99',
@@ -126,7 +126,7 @@ export const products = [
         styleId: 'DB4443',
         brand: 'Durango',
         gender: 'Men',
-        productName: 'Durango Mens 12" Rebel - Square Toe ',
+        productName: '12" Rebel - Square Toe ',
         description: 'The intricate stitching on the Durango Rebel evokes the true American spirit. This rugged, rowdy, rough n ready boot is ready for work. Offering a steel shank and abrasion, slip, and oil resistance, the Rebel can handle the toughest jobs with ease. But its more than just tough - the Cushion Flex insole and contoured footbed ensure that youre comfortable, too.',
         details: [
             'Square toe',
@@ -152,7 +152,7 @@ export const products = [
         styleId: '10010963',
         brand: 'Ariat',
         gender: 'Men',
-        productName: 'Ariat Men’s 11” Sport Distressed Brown– Wide Square Toe',
+        productName: '11” Sport Distressed Brown– Wide Square Toe',
         description: `The full-grain leather and unique five-row stitch pattern of Ariat Men’s Western 10010963 Sport create a distinctly rugged appeal. The Duratread™ outsole outlasts traditional rubber outsoles and is resistant to barnyard acids; Ariat’s 4LR™ Technology includes a four-layer footbed for comfort and a lightweight shank for support, and the Sport Cowboy has a synthetic air mesh lining that brings comfort all the way up the boot
         Great for outdoor work and fun, especially in and around the barn!`,
         details: [`Performance Riding Boot - Approved for riding`, `Full-Grain Leather Foot and Upper`, `Synthetic Air Mesh Lining`, `Five-Row Stitch Pattern`, `11" Upper`, `1.375" Roper Heel`, `Wide Square Toe`, `4LR™ Technology`],
@@ -168,7 +168,7 @@ export const products = [
         styleId: 'SV2534',
         brand: 'Justin',
         gender: 'Men',
-        productName: `Justin Men's 12" Whiskey Buffalo - Wide Square Toe`,
+        productName: `12" Whiskey Buffalo - Wide Square Toe`,
         description: `The SV2534, a classic men’s western boot from Justin’s Silver® Collection, exhibits dramatic stitching outlining a perfed saddle vamp. Justin’s J-Flex Flexible Comfort System® insole with a removable polyurethane insert and Justin Stabilization Technology® ensures your comfort throughout the day. This a good looking, functional western boot that is perfect for outdoor and casual wear! `,
         details: [
             `J-Flex Flexible Comfort System®`,
@@ -192,7 +192,7 @@ export const products = [
         styleId: '3235',
         brand: 'Justin',
         gender: 'Men',
-        productName: `Justin Men's - 10" Brock Desert - Roper toe `,
+        productName: `10" Brock Desert - Roper toe `,
         description: ``,
         details: [
             `10" Desert Bud Upper`,
@@ -211,7 +211,7 @@ export const products = [
         styleId: 'DP69681',
         brand: 'Dan Post',
         gender: 'Men',
-        productName: `Dan Post Men's 12” Alburquerque Waterproof - Broad Toe `,
+        productName: `12” Alburquerque Waterproof - Broad Toe `,
         description: `The DP69681 is crafted from tan distressed waterproof leather with a breathable waterproof membrane for ultimate protection. Cushioned insoles and mini-lug outsoles provide comfort and stability.`,
         details: [
             `All Over Tan Distressed Waterproof Leather`,
@@ -230,4 +230,164 @@ export const products = [
         amount: 1,
         
     },
+    {
+        id: '',
+        styleId: '10016238',
+        brand: 'Ariat',
+        gender: 'Women',
+        productName: `8” Fatbaby® Heritage Dapper Royal Chocolate – Round Toe  `,
+        description: `Short and sweet, Ariat Women’s 10016238 Fatbaby® Heritage Dapper is fashioned from a chocolate brown leather foot and matching suede upper, accented by bold, feminine blue stitching. This performance riding boot features an Everlon™ outsole that has minimal compression for superior cushioning and is wear-resistant, flexible, and light-weight. The 4LR™ Technology utilizes a four-layer footbed and lightweight shank for the support and comfort you need to hang in there on your ride.`,
+        details: [
+            `Performance Riding Boot – Approved for Riding`,
+            `Leather Foot with Suede Upper`,
+            `Five-Row Stitch Pattern`,
+            `8” Upper`,`1.5” Heel`,`Square Toe`,`4LR™ Technology: 
+            Four-Layer Footbed for Comfort,
+            Lightweight Stabilizing Shank for Support,
+            Duratread™ Outsole for Maximum Wear Resistance and Traction
+        `,`Outsole: Everlon™ Combination EVA and Blown Rubber `,`Lightweight and Flexible
+        Wear Resistant`,
+        ],
+        price: '115.99',
+        size: [6, 7, 7.5,8, 8.5, 9, 9.5, 10, 10.5, 11],
+        sale: '99.99',
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/ariat-womens-8-fatbabyr-heritage-dapper-royal-chocolate-square-toe-womens-boot-westernrubbr-sole-ariat-international-inc-464969_1800x1800.jpg?v=1600806561',
+        amount: 1,
+        
+    },
+    {
+        id: '',
+        styleId: 'WKL9994',
+        brand: 'Justin',
+        gender: 'Women',
+        productName: `11" Waterproof Lanie - Composite Toe with Met Guard`,
+        description: ``,
+        details: [
+            `11" Wyoming peanut buffalo upper`,
+            `Dual density orthotic with J-Flex flexible comfort system® insole`,
+            `Dual density rubber outsole`,
+        ],
+        price: '164.99',
+        size: [6, 7, 7.5,8, 8.5, 9, 9.5, 10, 10.5, 11],
+        sale: '',
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/justin-womens-11-waterproof-lanie-composite-toe-with-met-guard-womenspull-on-bootmetguard-justin-original-work-990548_1800x1800.jpg?v=1600808603',
+        amount: 1,
+    },
+    {
+        id: '',
+        styleId: 'TW3421',
+        brand: 'Tony Lama',
+        gender: 'Women',
+        productName: `10" Waterproof Lumen - Comp Toe `,
+        description: ``,
+        details: [
+            `Composite Toe - Our composite safety toe provides security and comfort against impact, compression and electrical hazard at a fraction of the weight.`,
+            `Electric Hazard - Our electrical hazard rated boots protect you from open electrical currents from the bottom up. Tested up to 18,000 volts.`,
+            `Waterproof - We use only the best construction and components to create waterproof boots that keep your feet dry no matter the conditions.`, `Full Welt - Our full welt construction offers a more universal boot fit. When using this method, our boot makers carefully sew the perimeter of the outsole to the upper boot to ensure quality, long-lasting craftsmanship. This well-known method creates a relaxed, comfortable fit with the ability to resole.`,`Material: Cowhide`,`Toe Shape: Wide Square`,`Height: 10 in.`
+        ],
+        price: '169.99',
+        size: [6, 7, 7.5,8, 8.5, 9, 9.5, 10, 10.5, 11],
+        sale: '160.00',
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/tony-lama-womens-10-waterproof-lumen-comp-toe-womens-boot-wtrproofsafety-tony-lama-company-923042_1800x1800.jpg?v=1609262759',
+        amount: 1,
+    },
+    {
+        id: '',
+        styleId: 'DRD0312',
+        brand: 'Durango',
+        gender: 'Women',
+        productName: `10" Lady Rebel Waterproof - Square toe`,
+        description: `This is the women's 10" Waterproof Brown/Evergreen Lady Rebel. This style has a full-grain leather vamp, fox, collar and pull straps with a faux shaft. Inside it has a soft mesh lining and waterproof membrane to keep your feet dry all day long. It has a contoured, ventilated, and removable cushion footbed with a cushion flex insole. This style also has a fiberglass shank for lightweight stability, rolled shank area, lightweight and flexible molded EVA midsole and a slip resistant, dual density and abrasion resistant rubber outsole. It has a double row sole stitch around the square toe for added durability with a 1 ¼" rocker heel. This boot is ready for a long day's work on the farm. Get the women's 10" Waterproof Brown/Evergreen Lady Rebel today.`,
+        details: [
+            `Waterproof membrane`,`Square toe`,`Cushion Flex insole`,`Rolled shank area`,`1 1/4" Rocker heel`,`Fiberglass shank`,`Soft mesh lining`,`Lightweight and flexible molded EVA midsole`,`Slip-resistant, dual density and abrasion-resistant rubber outsole`,`Contoured, ventilated and removable cushion footbed`,`Full-grain leather vamp, fox, collar and pull straps with man-made shaft`,`Double row sole stitch`
+        ],
+        price: '165.99',
+        size: [6, 7, 7.5,8, 8.5, 9, 9.5, 10, 10.5, 11],
+        sale: '',
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/durango-womens-10-lady-rebel-waterproof-square-toe-womens-boot-wtrproofnon-safty-durango-boot-569265_1800x1800.jpg?v=1600789640',
+        amount: 1,
+    },
+    {
+        id: '',
+        styleId: 'DRD0354',
+        brand: 'Durango',
+        gender: 'Women',
+        productName: `10" Lady Rebel Amethyst - Square toe `,
+        description: `This is the women's 12" Dark Earth/Amethyst Durango® Lady Rebel Pro™ style. This style is full grain leather with a soft mesh lining inside and has the Durango® X-Pand System™ which is a hidden gore expansion for universal fit and easy on off. This style contains a comfortable 7-layer outsole system. The first layer is the Durango Triple X-treme comfort removable polyurethane footbed with memory foam for unparalleled comfort. The second layer is an EVA cushion layer that contours and molds to your foot. The third layer is a ¾ genuine Goodyear welt construction and a genuine leather welt with double row cotton stitch. The fourth layer is a two-layer innersole with a flexible full-length bottom and stabilizing rigid ¾ heel tuck. The fifth layer is the Dually Shank System™ which contains two fiberglass shanks for medial and lateral torsion stability and midfoot support. The little-way stitch binds the outsole, heel tuck, and upper for absolute durability. The sixth layer is the ABS heel base which is nailed-weight relieved for lightweight durability. The seventh layer is the slip, oil and abrasion resistant rubber outsole that offers instant gratification. The 1 ½" rocker heel lessens stress by promoting a more natural heel strike and the rolled shank area is perfect for stirrup- friendly ease. Unbridle your western spirit in the women's 12" Dark Earth/Amethyst Durango® Lady Rebel Pro™ style; the perfect boots for performance-driven individuals. Get a pair today.`,
+        details: [
+            `Square toe`,`Full-grain leather`,`Rolled shank area`,`1 1/2" Rocker heel`,`Soft mesh lining`,`Durango® X-Pand System™: Hidden gore expansion for universal fit and easy on/off`,`Durango® Triple X-Treme Comfort™ removable polyurethane footbed with Memory Foam`,`Slip, oil and abrasion resistant rubber outsole`,`Cushion flex insole with rigid rear foot stabilizer`,`Fiberglass Dually Shank™ for torsion stability and mid-foot support`,`Littleway shank stitch for ultimate durability`,`3/4 genuine Goodyear welt construction`,`Genuine leather welt with double row cotton stitch`,`Durable and rigid nailed ABS heel`
+        ],
+        price: '199.99',
+        size: [6, 7, 7.5,8, 8.5, 9, 9.5, 10, 10.5, 11],
+        sale: '165.00',
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/durango-womens-10-lady-rebel-amethyst-square-toe-womens-boot-westernsquare-toe-durango-boot-661809_1800x1800.jpg?v=1600808181',
+        amount: 1,
+    },
+    {
+        id: '',
+        styleId: '10031726',
+        brand: 'Ariat',
+        gender: 'Women',
+        productName: `11" Mirabelle - Snip Toe`,
+        description: ``,
+        details: [
+            `ATS® technology for stability and all-day comfort`,`All Day Cushioning insole with rebound`,`Genuine leather foot and upper`,`Allover intricate embroidery`,`Lightweight and durable Bantamweight™ outsole`,`Shaft Height: 11"`,`Technology Filter: ATS`,`Toe Shape: Snip`,`Technology: ATS`
+        ],
+        price: '189.90',
+        size: [6, 7, 7.5,8, 8.5, 9, 9.5, 10, 10.5, 11],
+        sale: '',
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/ariat-womens-11-mirabelle-snip-toe-womens-boot-fashion-ariat-international-inc-472356_1800x1800.jpg?v=1600802340',
+        amount: 1,
+    },
+    {
+        id: '',
+        styleId: 'P51001',
+        brand: 'Caterpillar',
+        gender: 'Women',
+        productName: `Tawny 6" - Round Soft toe`,
+        description: `From the manufacturer: For a woman who loves the style of a classic work boot, with just a hint of something special, the Paisley work boot was built for you. Made with industrial applications in mind, this steel toe boot is engineered using Cat Footwear’s patented iTechnology® construction, offering work boot durability with athletic shoe comfort. for maximum coverage and protection. This boot also offers the protection of our new Street Shield technology, keeping you safe from spills and dirt. Simply wipe the boot off, no harm no foul. The Paisley comes in brown and gray and is 6” height for standard work boot protection.`,
+        details: [
+            `ASTM F2413-11 I/75 C/75 Steel Toe protects against impact or compression`,`ASTM F2413-05 1/75 EH Electrical Hazard Protection rated to protect against open circuits up to 600 volts in dry conditions`,`Proprietary iTechnology Construction for superior durability and comfort`,`ERGO Technology engineered to integrate stability, flexibility and comfort`,`Nylon Mesh Lining for added breathability and comfort`,`Nylex™ Sock Liner wicks away moisture from the foot to keep it dry and comfortable`,`PU Foam Footbed for cushioning comfort`,`PVC Midsole provides shock absorbance, support and strength in demanding use environments`,`Steel Shank provides support and stability`,`Full grain leather upper`,`T1170 Outsole performs against oil, water and is abrasion resistant`,` SRX Best-in-Class, Slip-resistant Rubber Outsole reduces the risk of slips and falls on low traction surfaces`,`Street Shield technology for protection against spills and splashes`
+        ],
+        price: '129.95',
+        size: [6, 7, 7.5,8, 8.5, 9, 9.5, 10, 10.5, 11],
+        sale: '',
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/caterpillar-womens-tawny-6-round-toe-womens-boot-lace-work-caterpillar-inc-363501_1800x1800.jpg?v=1600805070',
+        amount: 1,
+    },
+    {
+        id: '',
+        styleId: 'P90443',
+        brand: 'Caterpillar',
+        gender: 'Women',
+        productName: `6" Waterproof Dryverse - Steel toe`,
+        description: `Waterproof Fullgrain Leather or Nubuck Upper Nylon Mesh lining Nylex + PU Foam Sock liner T870 outsole Cement construction`,
+        details: [
+            `ASTM F2413-11 I/75 C/75 Steel Toe protects against impact or compression`,`ASTM F2413-05 1/75 EH Electrical Hazard Protection rated to protect against open circuits up to 600 volts in dry conditions`,`Proprietary iTechnology Construction for superior durability and comfort`,`ERGO Technology engineered to integrate stability, flexibility and comfort`,`Nylon Mesh Lining for added breathability and comfort`,`Nylex™ Sock Liner wicks away moisture from the foot to keep it dry and comfortable`,`PU Foam Footbed for cushioning comfort`,`PVC Midsole provides shock absorbance, support and strength in demanding use environments`,`Steel Shank provides support and stability`,`Full grain leather upper`,`T1170 Outsole performs against oil, water and is abrasion resistant`,` SRX Best-in-Class, Slip-resistant Rubber Outsole reduces the risk of slips and falls on low traction surfaces`,`Street Shield technology for protection against spills and splashes`
+        ],
+        price: '130.95',
+        size: [6, 7, 7.5,8, 8.5, 9, 9.5, 10, 10.5, 11],
+        sale: '',
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/caterpillar-womens-6-waterproof-dryverse-steel-toe-women-lacewtrproofsafety-toe-caterpillar-inc-974870_1800x1800.jpg?v=1600792848',
+        amount: 1,
+    },
+    {
+        id: '',
+        styleId: 'GY9985',
+        brand: 'Justin',
+        gender: 'Women',
+        productName: `11” Waterproof Aged Bark Gypsy with Perfect Saddle Vamp - Round Steel Toe`,
+        description: `Ladies! With its leather Saddle Vamp and Diamond Cut pull straps, this Justin Gypsy WKL9984 is a stylish steel toe work boot! It also features the J-Flex comfort insoles and a sturdy brown rubber outsole for double the comfort and durability on the job.
+
+        Justin Gypsy Collection`,
+        details: [
+            `Upper: 11" Aged Bark With Diamond Cut Pull Strap`,`Foot: Aged Bark Steel Toe W/P`,`Toe: Safety`,`ASTM F2413-11, 175, C75 safety standards`,`Gypsy Round Toe/Steel Toe`,`Steel Shank`,`Feature: Waterproof / Full Bootie Construction`,`ASTM Electrical Hazard Rated`,`Insole: J-Flex Flexible Comfort System®`,`Outsole: Black Rubber`
+        ],
+        price: '139.99',
+        size: [6, 7, 7.5,8, 8.5, 9, 9.5, 10, 10.5, 11],
+        sale: '',
+        image: 'https://cdn.shopify.com/s/files/1/0249/2242/3378/products/justin-womens-11-waterproof-aged-bark-gypsy-with-perfect-saddle-vamp-round-steel-toe-womens-boot-westernsafety-toe-justin-original-work-684429_1800x1800.jpg?v=1600974325',
+        amount: 1,
+    },
+    
     ];

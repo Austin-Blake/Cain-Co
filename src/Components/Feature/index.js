@@ -1,7 +1,15 @@
 import React, { useContext } from 'react';
 import MyContext from '../../Context/MyContext';
-import {Link} from 'react-router-dom';
-import {FeatureContainer, FeatureButton, FeaturedImage} from './FeatureElements'
+
+import {
+    FeatureContainer,
+    FeatureButton,
+    FeaturedImage,
+    FeatureLink,
+    FeatureH1,
+    FeatureDiv,
+    FeatureP
+} from './FeatureElements'
 
 
 export const Feature = () => {
@@ -11,18 +19,20 @@ export const Feature = () => {
     
     return (
         <FeatureContainer>
-            <div>
-                <h1>Deal of the Month</h1>
-                <p>{products.[0].productName}</p>
-            </div>
-            <div>
-                <Link to={`/products/${products.[0].styleId}`}>
-                <FeaturedImage src={products.[0].image} alt={products.[0].title} />
-                </Link>
-            </div>
-            <div>
+            <FeatureDiv>
+                <FeatureH1>Deal of the Month</FeatureH1>
+                <FeatureLink to={`/products/${products[0].styleId}`}>
+                <FeatureP>{products[0].productName}</FeatureP>
+                </FeatureLink>
+            </FeatureDiv>
+            <FeatureDiv>
+                <FeatureLink to={`/products/${products[0].styleId}`}>
+                <FeaturedImage src={products[0].image} alt={products[0].title} />
+                </FeatureLink>
+            </FeatureDiv>
+            <FeatureDiv>
                 <FeatureButton>Order</FeatureButton>
-            </div>
+            </FeatureDiv>
         </FeatureContainer>
     )
 }

@@ -1,10 +1,11 @@
-import styled from 'styled-components'
-import FeaturePic from '../../Images/yoshi-takekawa-7wk0ja-DP_c-unsplash.jpg'
+import styled from 'styled-components';
+import {Link} from 'react-router-dom';
+import FeaturePic from '../../Images/Background/yoshi-takekawa-7wk0ja-DP_c-unsplash.jpg';
 
 
 export const FeatureContainer = styled.div`
 background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${FeaturePic});
-height: 100%;
+height: 100vh;
 background-position: center;
 background-size: cover;
 display: flex;
@@ -15,18 +16,21 @@ color: white;
 text-align: center;
 padding: 0 1rem;
 
-h1{
-    font-size: clamp(3rem, 5vw, 5rem);
-}
+`;
 
-p{
-    margin: 1rem;
-    font-size: clamp(1.5rem, 3vw, 2rem);
-}
+export const FeatureDiv = styled.div`
+height: 100%;
+`;
 
-div{
-    height: 100%;
-}
+export const FeatureH1 = styled.h1`
+font-size: clamp(3rem, 5vw, 10rem);
+    color: #ffc500;
+    text-decoration: underline;
+`;
+
+export const FeatureP = styled.p`
+margin: 1rem;
+    font-size: clamp(1.5rem, 3vw, 8rem);
 `;
 
 export const FeatureButton = styled.button`
@@ -47,9 +51,17 @@ transition: 200ms ease-out;
 `;
 
 export const FeaturedImage = styled.img`
-height: 70%;
-width: 50%;
+width: 30vw;
 opacity: .9;
 background-color: white;
 box-shadow:0 0 20px 10px #a9a9a9;
+
+@media screen and (max-width: 600px){
+    width: 60vw;
+}
+`;
+
+export const FeatureLink = styled(Link)`
+text-decoration: none;
+color: white;
 `;

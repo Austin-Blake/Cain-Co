@@ -22,10 +22,10 @@ export const Navbar = () => {
                 <NavIcon onClick={() => toggle()}>
                     <p>&#9776;</p>
                 </NavIcon>
-                <Link to="/cart">
-                <CartIcon />
-                </Link>
             </Nav>
+            <Link to="/cart">
+                <CartIcon />
+            </Link>
         </div>
     )
 }

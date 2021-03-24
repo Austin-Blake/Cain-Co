@@ -1,31 +1,33 @@
 import styled from 'styled-components';
-import ImgBg from '../../Images/james-sullivan-ESZRBtkQ_f8-unsplash.jpg';
+import ImgBg from '../../Images/Background/james-sullivan-ESZRBtkQ_f8-unsplash.jpg';
 
 
 export const HeroContainer = styled.div`
 background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.4), rgba(0,0,0,0.1)), url(${ImgBg});
 background-position: center;
 background-size: cover;
-height: 110vh;
-min-height: 100%;
+height: 100vh;
+
+@media screen and (min-width: 320px){
+
+}
 `;
 
 export const HeroContent = styled.div`
+display: flex;
+align-content: center;
 height: 100%;
-max-height: 100%;
 width: 100vw;
-padding: 0rem calc((100vw -1300px) /2);
+
 `;
 
 export const HeroItems = styled.div`
 display: flex;
 flex-direction: column;
-justify-content: space-evenly;
+justify-content: center;
 align-items: flex-start;
-height: 100vh;
-max-height: 100%;
 padding: 0 2rem;
-width: 50vw;
+width: 80vw;
 color: white;
 text-transform: uppercase;
 line-height: 1;
@@ -37,25 +39,27 @@ font-weight: bold;
 `;
 
 export const HeroH1 = styled.h1`
-font-size: clamp(2.5rem, 5vw, 5rem);
-margin-bottom: 1rem;
+font-size: clamp(2.5rem, 5vw, 10rem);
+margin: 1rem 0 1rem 0;
 box-shadow: 2px 5px #e9ba23;
-/* letter-spacing: 3px; */
-text-align: left;
+letter-spacing: 3px;
+`;
+
+export const HeroH2 = styled.h2`
+font-family: 'specify';
+font-size: clamp(3rem, 8vw, 15rem);
+margin-bottom: 3rem;
+color: white;
+text-decoration: underline;
 `;
 
 export const HeroP = styled.p`
 font-family: 'specify';
-font-size: clamp(3rem, 8vw, 7rem);
+font-size: clamp(3rem, 5vw, 7rem);
 margin-bottom: 2rem;
 color: #e9ba23;
 text-align: left;
 
-&::after{
-    content: ' all year';
-    color: white;
-    text-decoration: underline;
-}
 `;
 
 export const HeroBtn = styled.button`

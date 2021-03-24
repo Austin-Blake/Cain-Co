@@ -4,13 +4,14 @@ import { FaTimes } from 'react-icons/fa'
 
 export const SidebarContainer = styled.aside`
 position: fixed;
-z-index: 97;
+z-index: 999;
 width: 200px;
 height:100%;
 background: #ffc500;
 display: grid;
-align-items: center;
+align-items: start;
 justify-content: center;
+padding-top: 3rem;
 top: 0;
 transition: 300ms ease-in-out;
 right: ${({ isOpen }) => (isOpen ? '0' : '-1000px')};
@@ -30,8 +31,14 @@ export const Icon = styled.div`
     right: 1.5rem;
     background: transparent;
     border: transparent;
-    font-size: 2rem;
-cursor: pointer;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover{
+    transform: scale(1.7);
+    transition: 200ms ease-in;
+    
+    }
 `;
 
 export const SidebarMenu = styled.div`
