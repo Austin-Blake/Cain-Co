@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 
 export const ProductsContainer = styled.div`
-width: 100vw;
+width: 100%;
 min-height: 100vh;
 padding: 5rem calc((100vw -1300px) /2);
 background: #ffffff;
@@ -26,9 +26,10 @@ width: 300px;
 `;
 
 export const ProductImg = styled.img`
-height: 350px;
-min-width: 300px;
-padding: 2rem;
+height: 300px;
+
+max-width: 100%;
+padding: 1rem;
 box-shadow: 1px 3px #000000;
 `;
 

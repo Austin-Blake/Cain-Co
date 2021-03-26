@@ -1,7 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import MyContext from "../../Context/MyContext";
 import { Link } from "react-router-dom";
-import { Feature } from "../Feature";
+import { Feature } from "../Feature/index";
+import {Navbar} from '../Navbar/index'
 
 import {
 	HeroContainer,
@@ -12,10 +13,11 @@ import {
 	HeroBtn,
 	HeroH2,
 } from "./HeroElements";
+import { CurrentBrands } from "../CurrentBrands/CurrentBrands";
 
 export const Hero = () => {
-	const myContext = useContext(MyContext);
-	const { products } = myContext;
+	const my_Context = useContext(MyContext);
+	const { products } = my_Context;
 
 	useEffect(() => {
 		// getProducts();
@@ -24,6 +26,7 @@ export const Hero = () => {
 	return (
 		<>
 			<HeroContainer>
+				<Navbar/>
 				<HeroContent>
 					<HeroItems>
 						<HeroH1>Looking for your next Pair of Boots?</HeroH1>
@@ -35,6 +38,7 @@ export const Hero = () => {
 					</HeroItems>
 				</HeroContent>
 			</HeroContainer>
+			<CurrentBrands />
 			{products.length > 0 && <Feature />}
 		</>
 	);

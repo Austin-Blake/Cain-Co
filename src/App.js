@@ -7,7 +7,6 @@ import { GlobalStyle } from './globalStyles';
 import { Hero } from './Components/Hero';
 import { Products } from './Components/Products';
 import {ProductDetails} from './Components/ProductDetail';
-import {Navbar} from './Components/Navbar';
 import { Footer } from './Components/Footer';
 import Provider from './Context/Provider'
 import { Cart } from './Components/Cart/Cart';
@@ -20,7 +19,6 @@ const App = () => {
     <Provider>
       <Router>
         <GlobalStyle />
-        <Navbar />
         <Switch>
           <Route path="/" exact component={Hero} />
           <Route path="/products" exact component={Products} />

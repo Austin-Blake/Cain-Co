@@ -13,8 +13,8 @@ import {
 
 
 export const Feature = () => {
-    const myContext = useContext(MyContext);
-    const { products } = myContext;
+    const my_Context = useContext(MyContext);
+    const { products } = my_Context;
     
     
     return (
@@ -24,6 +24,7 @@ export const Feature = () => {
                 <FeatureLink to={`/products/${products[0].styleId}`}>
                 <FeatureP>{products[0].productName}</FeatureP>
                 </FeatureLink>
+                <FeatureH1>$ {products[0].price}</FeatureH1>
             </FeatureDiv>
             <FeatureDiv>
                 <FeatureLink to={`/products/${products[0].styleId}`}>

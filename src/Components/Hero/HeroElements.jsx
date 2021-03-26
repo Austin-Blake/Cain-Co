@@ -6,10 +6,12 @@ export const HeroContainer = styled.div`
 background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.4), rgba(0,0,0,0.1)), url(${ImgBg});
 background-position: center;
 background-size: cover;
-height: 100vh;
+background-repeat: no-repeat;
+height: 100%;
 
-@media screen and (min-width: 320px){
-
+@media screen and (max-width: 430px){
+    height: fit-content;
+    background-position: bottom right;
 }
 `;
 
@@ -17,16 +19,20 @@ export const HeroContent = styled.div`
 display: flex;
 align-content: center;
 height: 100%;
-width: 100vw;
+width: 100%;
 
+@media screen and (max-width: 430px){
+
+}
 `;
 
 export const HeroItems = styled.div`
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: start;
 align-items: flex-start;
 padding: 0 2rem;
+height: 100%;
 width: 80vw;
 color: white;
 text-transform: uppercase;
@@ -64,8 +70,8 @@ text-align: left;
 
 export const HeroBtn = styled.button`
 font-size: 1.4rem;
-padding: .5rem 3rem;
-margin-bottom: 1rem;
+padding: .5rem 2rem;
+margin-bottom: 4rem;
 border: none;
 background: #e31837;
 color: white;

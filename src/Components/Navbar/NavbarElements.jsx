@@ -1,38 +1,31 @@
 import styled from 'styled-components';
 import { NavLink as Link } from 'react-router-dom';
-import { FaRedhat, FaShoppingCart } from 'react-icons/fa'
+import { FaRedhat } from 'react-icons/fa'
 import {ImCart} from 'react-icons/im'
 
 export const Nav = styled.nav`
 background: transparent;
-height: 4rem;
-margin: 1rem;
+height: fit-content;
 display: flex;
-justify-content: center;
+justify-content: start;
 align-items: center;
 font-weight: 700;
 
-@media screen and (max-width: 400px){
-    justify-content: space-between;
-}
+
 `;
 
 export const NavLink = styled(Link)`
 font-family: Satisfy;
 color: #ff0505;
 font-size: clamp(3rem, 5vw, 8rem);
-padding: 3rem;
+margin: 1rem;
 display: flex;
 align-items: center;
 text-decoration: underline;
 cursor: pointer;
 
 
-@media screen and (max-width: 430px){
-    position: absolute;
-    top: -30px;
-    left: 10px;
-}
+
 `;
 
 export const NavIcon = styled.div`
@@ -46,14 +39,14 @@ color: black;
 p{
     transform: translate(-50%, 10%);
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2rem;  
 }
 
 &:hover{
     color: red;
 }
 `;
-export const Icon = styled(FaRedhat)`
+export const Logo = styled(FaRedhat)`
 color: #c20a0a;
 font-size: 2rem;
 
@@ -80,5 +73,33 @@ height: 2rem;
 @media screen and (max-width: 500px){
     width: 2rem;
     padding: .3rem;
+}
+`;
+
+export const CartAmount = styled.p`
+z-index: 10;
+position: absolute;
+top: 3rem;
+right: .5rem;
+width: .8rem;
+padding: .1rem;
+color: black;
+font-size: 1rem;
+text-align: center;
+border-radius: 50%;
+background-color: lightblue;
+
+
+&:hover{
+    
+    color: #ff0000;
+};
+
+@media screen and (max-width: 500px){
+    position: absolute;
+    top: 2.8rem;
+    right: 0;
+    width: 1.1rem;
+    padding: 0rem;
 }
 `;

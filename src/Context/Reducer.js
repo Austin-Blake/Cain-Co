@@ -1,5 +1,5 @@
 import {filterId, iterateStateFilter} from './helper'
-const _ = require('lodash');
+import {cloneDeep } from 'lodash';
 
 
 
@@ -24,7 +24,7 @@ const reducer = (state, action) => {
             
         case 'ADD_TO_CART':
 
-            const payload = _.cloneDeep(action.payload);
+            const payload = cloneDeep(action.payload);
             
 
             if (state.cart.length === 0) {                
@@ -33,13 +33,13 @@ const reducer = (state, action) => {
 
                 return {
                     ...state,
-                    cart: state.cart
+                    cart: state.cart,
                 };
             } if (iterateStateFilter(state.cart, payload, filterId) === true) {
                 
                 return {
                     ...state,
-                    cart: state.cart
+                    cart: state.cart,
                 };
             } 
             else {
@@ -49,6 +49,7 @@ const reducer = (state, action) => {
                 return {
                     ...state,
                     cart: state.cart,
+                    
                 }
             }
 
@@ -60,7 +61,7 @@ const reducer = (state, action) => {
 
                         return item.id !== action.payload.id;
                         
-                    }), 
+                    }),
             }
         
             case 'EMPTY_CART':
@@ -68,13 +69,12 @@ const reducer = (state, action) => {
                     ...state,
                     cart: [],
             }
-        
         case 'INCREMENT':
-            const payload2 = _.cloneDeep(action.payload);
+            const payloadSecond = cloneDeep(action.payload);
             return {
                 ...state,
                 products: state.products.map((item) => {
-                    if (item.id === payload2.id) {
+                    if (item.id === payloadSecond.id) {
                         item = {...item, amount: item.amount + 1 };
 
                         return item;
@@ -83,7 +83,7 @@ const reducer = (state, action) => {
                     }
                 }),
                 cart: state.cart.map((item) => {
-                    if (item.id === payload2.id) {
+                    if (item.id === payloadSecond.id) {
                         item = {...item, amount: item.amount + 1 };
 
                         return item;
@@ -95,11 +95,11 @@ const reducer = (state, action) => {
                 })
             }
         case 'DECREMENT':
-            const payload3 = _.cloneDeep(action.payload);
+            const payloadThird = cloneDeep(action.payload);
                 return {
                     ...state,
                     products: state.products.map(item => {
-                        if (item.id === payload3.id) {
+                        if (item.id === payloadThird.id) {
                             item = {...item, amount: item.amount - 1 };
                             return item;
                         } else {
@@ -107,7 +107,7 @@ const reducer = (state, action) => {
                         }
                     }),
                     cart: state.cart.map((item) => {
-                        if (item.id === payload3.id) {
+                        if (item.id === payloadThird.id) {
                             item = {...item, amount: item.amount - 1 };
 
                             return item;
@@ -136,18 +136,40 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 total,
-                amount,
+                amount
     
             }
+        
+        case 'AMOUNT':
+
+            let { itemAmount } = state.cart.reduce((cartTotal, item) => {
+                
+                cartTotal.amount += item.amount;
+                console.log(cartTotal.amount)
+                return cartTotal;
+            }, { amount: 0 })
+            return {
+                ...state,
+                itemAmount
+            }
+        
         case 'SET_ITEM_DETAIL':
             return {
                 ...state,
                 productItem: action.payload,
             }
+        
+        case 'SET_BRAND':
+                return {
+                    ...state,
+                    brand: action.payload
+                }
     
         default:
             return state;
     }
 };
+
+
 
 export default reducer;

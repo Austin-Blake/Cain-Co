@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-
+import {Link} from 'react-router-dom'
 
 
 export const ProductsContainer = styled.div`
-width: 100vw;
+width: 100%;
 min-height: 100vh;
 padding: 5rem calc((100vw -1300px) /2);
 background: #ffffff;
@@ -21,7 +21,7 @@ margin: 0 auto;
 export const ProductCard = styled.div`
 margin: 0 2rem;
 line-height: 1.5;
-width: 100vw;
+width: 100%;
 `;
 
 export const ProductImg = styled.img`
@@ -69,7 +69,7 @@ color: red;
     content: '$ ';
 }
 `;
-export const ProductSize = styled.p`
+export const DisplayProductSize = styled.p`
 text-align: center;
 margin: 1rem;
 font-size: 1rem;
@@ -80,17 +80,32 @@ font-size: 1rem;
 `;
 
 export const ProductBrand = styled.h1`
-font-family: Simplicy;
+font-family: 'Satisfy';
 color: black;
 font-size: clamp(2rem, 2.5vw, 3rem);
 text-align: center;
 padding-top: 2rem;
 `;
 
-export const ProductButton = styled.button`
+export const AmountWrapper = styled.div`
+display: flex;
+`;
+
+export const ProductAmountButton = styled.button`
+color: white;
+background-color: black;
+padding: 0 .5rem;
+margin: 0 .4rem;
+`;
+
+export const ProductAmount = styled.h4`
+
+`;
+
+export const ProductAddButton = styled.button`
 font-size: 1rem;
 padding: .5rem 4rem;
-margin: 0 0 2rem 0;
+margin: 1rem 0 2rem 0;
 border: none;
 background: #e31837;
 color: white;
@@ -103,15 +118,35 @@ transition: 200ms ease-out;
     color: black;
 }
 `;
+export const GoToCartButton = styled(Link)`
+font-size: 1rem;
+padding: .5rem 4rem;
+margin: 1rem 0 2rem 0;
+border: none;
+background: #e31837;
+color: white;
+transition: 200ms ease-out;
+
+&:hover{
+    background: #ffc500;
+    transition: 200ms ease-out;
+    cursor: pointer;
+    color: black;
+}
+`;
+
 export const DetailWrapper = styled.ul`
 display: flex;
 flex-direction: column;
 align-items: center;
-align-items: left;
-margin: 2rem 0;
+margin: 3rem 0;
+
+text-align: center;
 `;
 export const ProductDetail = styled.li`
 list-style-type: disc;
+line-height: 2rem;
+margin: auto;
 `;
 
 export const SizeWrapper = styled.div`

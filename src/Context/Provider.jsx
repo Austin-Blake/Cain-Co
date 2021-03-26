@@ -10,9 +10,14 @@ const Provider = ({ children }) => {
         products: products,
         cart: [],
         total: 0,
+        itemAmount: 0
     };
-    const [brand, setBrand] = useState('Justin');
 
+    //Set state for filtering products by Brand or Gender
+    const [brand, setBrand] = useState('');
+    const [gender, setGender] = useState('');
+    const [isOpen, setIsOpen] = useState(false);
+    const [size, setSize] = useState();
     const [state, dispatch] =
         useReducer(reducer, initialState);
     
@@ -39,10 +44,17 @@ const Provider = ({ children }) => {
             cart: state.cart,
             productItem: state.productItem,
             total: state.total,
-            dispatch,
+            itemAmount: state.amount,
             state,
+            dispatch,
             brand,
-            setBrand
+            setBrand,
+            gender,
+            setGender,
+            isOpen,
+            setIsOpen,
+            size,
+            setSize,
         }}>
             {children}
         </MyContext.Provider>

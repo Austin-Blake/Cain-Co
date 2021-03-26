@@ -2,8 +2,8 @@ import React from 'react';
 import {
     SidebarContainer,
     Icon,
-     CloseIcon,
-     SidebarMenu,
+    CloseIcon,
+    SidebarMenu,
     SidebarLink,
 } from './SidebarElements';
 

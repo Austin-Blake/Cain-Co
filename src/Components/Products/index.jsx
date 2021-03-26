@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 import MyContext from '../../Context/MyContext';
+import { Navbar } from '../Navbar';
+import { CurrentBrands } from '../CurrentBrands/CurrentBrands';
 import {
     ProductsContainer,
     ProductsHeading,
@@ -12,13 +14,15 @@ import {
 } from './ProductsElements';
 
 export const Products = () => {
-    const myContext = useContext(MyContext);
-    const {products} = myContext;
+    const my_Context = useContext(MyContext);
+    const {products} = my_Context;
 
 
 
     return (
-        
+        <>
+            <Navbar />
+            <CurrentBrands />
         <ProductsContainer>
             <ProductsHeading>Cain's Catalog</ProductsHeading>
             <ProductWrapper>
@@ -26,7 +30,8 @@ export const Products = () => {
                     return (
                         <ProductCard key={product.styleId}>
                             <ProductImg src={product.image} alt={product.productName}/>
-                            <ProductInfo>     
+                            <ProductInfo>
+                                <p>{product.gender}'s</p>
                                 <ProductTitleLink to={`/products/${product.styleId}`}>{product.productName}</ProductTitleLink>
                                 <ProductPrice>{product.price}</ProductPrice>
                             </ProductInfo>
@@ -34,6 +39,7 @@ export const Products = () => {
                     )
                 })}
             </ProductWrapper>
-        </ProductsContainer>
+            </ProductsContainer>
+        </>
     )
 }
