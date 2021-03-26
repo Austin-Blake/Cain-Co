@@ -18,11 +18,11 @@ import {
 
 export const Category = () => {
     const my_Context = useContext(MyContext);
-    const { products, brand, gender } = my_Context;
+    const { products, brand, gender, title } = my_Context;
     
     //State to map over filterResults
     const [choice, setChoice] = useState([]);
-
+    
         
         
     
@@ -41,11 +41,11 @@ setChoice(brandList);
         return (
             <>
                 <Navbar />
-            <CategoryList />
+                <CategoryList />
         <CategoryContainer>
                     <CategoryHeading>Cain's Catalog Results</CategoryHeading>
                     <CategoryHeading>For</CategoryHeading>
-                    <CategoryBrand>{brand}</CategoryBrand>
+                    <CategoryBrand>{title.toUpperCase()}</CategoryBrand>
             <CategoryWrapper>
                 {choice.map((product) => {
                     return (

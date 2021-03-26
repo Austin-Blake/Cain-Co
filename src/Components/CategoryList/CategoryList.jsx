@@ -11,7 +11,7 @@ import {
 
 export const CategoryList = () => {
     const my_Context = useContext(MyContext);
-    const { setBrand, setGender, products } = my_Context;
+    const { setBrand, setGender, setTitle, products } = my_Context;
 
     const brandNames = findBrandNames(products);
     
@@ -20,13 +20,21 @@ export const CategoryList = () => {
         <>
             <CategoryListContainer >
                 <CategoryListMenu>
-                    <GenderOption onClick={(e)=> setGender(e.target.value) } value={'men'}>Men's Boots</GenderOption>
-                    <GenderOption onClick={(e)=> setGender(e.target.value) } value={'women'}>Women's Boots</GenderOption>
+                    <GenderOption onClick={(e) => {
+                        setGender(e.target.value);
+                    setTitle(e.target.value)}} value={'men'}>Men's Boots</GenderOption>
+                    <GenderOption onClick={(e) => {
+                        setGender(e.target.value);
+                        setTitle(e.target.value);
+                    }} value={'women'}>Women's Boots</GenderOption>
                 </CategoryListMenu>
                 <FilterBy>Our Brands</FilterBy>
             <CategoryListMenu>
                     {brandNames.map((name) => {
-                      return <BrandOption onClick={(e) => setBrand(e.target.value)} key={name} >{name}</BrandOption>
+                        return <BrandOption onClick={(e) => {
+                            setBrand(e.target.value);
+                            setTitle(e.target.value);
+                        }} key={name} >{name}</BrandOption>
                     })
                         }
             </CategoryListMenu>

@@ -18,6 +18,7 @@ const Provider = ({ children }) => {
     const [gender, setGender] = useState('');
     const [isOpen, setIsOpen] = useState(false);
     const [size, setSize] = useState();
+    const [title, setTitle] = useState('');
     const [state, dispatch] =
         useReducer(reducer, initialState);
     
@@ -55,6 +56,8 @@ const Provider = ({ children }) => {
             setIsOpen,
             size,
             setSize,
+            title,
+            setTitle,
         }}>
             {children}
         </MyContext.Provider>

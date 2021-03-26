@@ -1,7 +1,7 @@
 //React Import Files
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
+import ScrollToTop from './Components/Scroll/ScrollToTop'
 //Style Component Imports
 import { GlobalStyle } from './globalStyles';
 import { Hero } from './Components/Hero';
@@ -19,6 +19,7 @@ const App = () => {
     <Provider>
       <Router>
         <GlobalStyle />
+        <ScrollToTop />
         <Switch>
           <Route path="/" exact component={Hero} />
           <Route path="/products" exact component={Products} />
