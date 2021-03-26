@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { calculateAmount } from '../../Context/helper';
+import React, { useContext } from 'react';
+
 import MyContext from '../../Context/MyContext';
 import {Navbar} from '../Navbar/index'
 import {

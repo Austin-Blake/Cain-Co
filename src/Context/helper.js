@@ -1,13 +1,5 @@
 import { isEqual } from 'lodash';
 
-export const calculateAmount = (cart) => {
-    return cart.reduce((cartTotal, item) => {
-        cartTotal += item.amount;
-        console.log(cartTotal)
-        return cartTotal;
-    });
-
-}
 
 export const filterId = (payload) => {
     const findId = Object.keys(payload).reduce((object, key) => {
