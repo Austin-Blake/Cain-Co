@@ -1,3 +1,14 @@
+#React Application-Boot Store
+Built using React, utilizing functional components, Context, Router, Hooks, useReducer & styled components. 
+								
+**Application Simulates fetching data from api, stores data in Context to be later displayed to user.
+
+Application implements data filtering by gender and brand, individual item page allows user to choose amount of items, boot size and add to cart.
+Cart Icon updates cart amount in real-time. Inside cart if amount is at one and "-" is clicked, item is removed from cart.
+
+**(Hard coded actual data & Commented out API fetch)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
