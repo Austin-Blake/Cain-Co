@@ -19,7 +19,7 @@ export const Sidebar = ({isOpen, toggle}) => {
                 <SidebarLink to='/' exact={'true'} onClick={() => toggle()}>Home</SidebarLink>
                 <SidebarLink to='/category' onClick={() => toggle()}>Shop by Brand</SidebarLink>
                     <SidebarLink to='/products' onClick={() => toggle()}>Products</SidebarLink>
-                    <SidebarLink to='/about' onClick={() => toggle()}>About</SidebarLink>
+                    <SidebarLink to='/about' onClick={() => toggle()}>About Us</SidebarLink>
             </SidebarMenu>
         </SidebarContainer>
     )

@@ -10,7 +10,8 @@ import {ProductDetails} from './Components/ProductDetail';
 import { Footer } from './Components/Footer';
 import Provider from './Context/Provider'
 import { Cart } from './Components/Cart/Cart';
-import { Category } from './Components/Category/Category'
+import { Category } from './Components/Category/Category';
+import {About} from './Components/About/About'
 
 
 const App = () => {
@@ -26,7 +27,7 @@ const App = () => {
           <Route path="/products/:id" exact component={ProductDetails} />
           <Route path="/category" exact component={Category} />
           <Route path="/cart" component={Cart} />
-          
+          <Route path="/about" component={About} />
         </Switch>
         <Footer/>
       </Router>
