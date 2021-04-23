@@ -147,7 +147,7 @@ const reducer = (state, action) => {
                 cartTotal.amount += item.amount;
                 console.log(cartTotal.amount)
                 return cartTotal;
-            }, { amount: 0 })
+            }, { itemAmount: 0 })
             return {
                 ...state,
                 itemAmount
