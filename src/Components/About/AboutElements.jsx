@@ -10,7 +10,7 @@ export const AboutWrapper = styled.div`
 display: flex;
 flex-direction: column;
 align-items:center;
-height: 70vh;
+height: 100%;
 background-color: rgba(0,0,0,0.6);
 `;
 export const AboutH1 = styled.h1`

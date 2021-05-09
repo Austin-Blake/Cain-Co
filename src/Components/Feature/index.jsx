@@ -21,14 +21,14 @@ export const Feature = () => {
         <FeatureContainer>
             <FeatureDiv>
                 <FeatureH1>Deal of the Month</FeatureH1>
-                <FeatureLink to={`/products/${products[0].styleId}`}>
-                <FeatureP>{products[0].productName}</FeatureP>
+                <FeatureLink to={`/products/${products[14].styleId}`}>
+                <FeatureP>{products[14].productName}</FeatureP>
                 </FeatureLink>
-                <FeatureH1>$ {products[0].price}</FeatureH1>
+                <FeatureH1>$ {products[14].price}</FeatureH1>
             </FeatureDiv>
             <FeatureDiv>
-                <FeatureLink to={`/products/${products[0].styleId}`}>
-                <FeaturedImage src={products[0].image} alt={products[0].title} />
+                <FeatureLink to={`/products/${products[14].styleId}`}>
+                <FeaturedImage src={products[14].image} alt={products[14].title} />
                 </FeatureLink>
             </FeatureDiv>
             <FeatureDiv>

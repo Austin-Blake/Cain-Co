@@ -50,7 +50,7 @@ transition: 200ms ease-out;
 `;
 
 export const FeaturedImage = styled.img`
-width: 30vw;
+width: 30%;
 opacity: .9;
 background-color: white;
 box-shadow:0 0 20px 10px #a9a9a9;

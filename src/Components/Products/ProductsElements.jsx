@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 export const ProductsContainer = styled.div`
 width: 100%;
 min-height: 100vh;
-padding: 5rem calc((100vw -1300px) /2);
+padding: 5rem;
 background: #ffffff;
 color: #000000;
 `;

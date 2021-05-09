@@ -25,9 +25,8 @@ border-bottom: 1px solid black;
 margin-bottom: 1rem;
 
 @media screen and (max-width: 430px){
-    padding: 0;
-    flex-direction: column;
-    align-items: center;
+    padding:0 1rem;
+justify-content: center;
 }
 `;
 
@@ -46,7 +45,8 @@ cursor: pointer;
 }
 
 @media screen and (max-width: 430px){
-    padding: 0rem;
+    justify-content: space-between;
+    padding: 1rem 1rem;
     font-size: 1.5rem;
     
 }

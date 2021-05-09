@@ -12,7 +12,7 @@ import {
 export const CurrentBrands = () => {
 
     const my_Context = useContext(MyContext);
-    const { setBrand, products } = my_Context;
+    const { setBrand, products, setTitle } = my_Context;
 
     const brandNames = findBrandNames(products);
 
@@ -20,17 +20,17 @@ export const CurrentBrands = () => {
         <>
             <CurrentBrandsContainer >
                 <BrandH1>Our Brands</BrandH1>
-            <CurrentBrandsWrapper>
+                <CurrentBrandsWrapper>
                     {brandNames.map((name) => {
                         return (
                             <BrandLink key={name} to="/category">
-                            <BrandOption onClick={(e) => setBrand(e.target.value)} key={name}>{name}</BrandOption>
-                            </BrandLink>)
-                    })
-                        }
-            </CurrentBrandsWrapper>
-        </CurrentBrandsContainer>
+                                <BrandOption onClick={(e) => { setBrand(e.target.value); setTitle(e.target.value) }} key={name}>{name}</BrandOption>
+                            </BrandLink>
+                        )}
+                    )}
+                </CurrentBrandsWrapper>
+            </CurrentBrandsContainer>
             
-        </>
+       </>
     )
 }

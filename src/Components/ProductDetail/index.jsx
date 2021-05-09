@@ -82,8 +82,8 @@ export const ProductDetails = ({match}) => {
                         <GoToCartButton to={item.currentSize && item.amount > 0 ? "/cart" : '#'}> Go To Cart</GoToCartButton>
                     </DetailWrapper>
                 </ProductCard>  
-             </ProductWrapper>
-            </ProductsContainer>
+            </ProductWrapper>
+        </ProductsContainer>
         </>
     )
 }

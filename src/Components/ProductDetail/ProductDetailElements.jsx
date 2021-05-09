@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 export const ProductsContainer = styled.div`
 width: 100%;
 min-height: 100vh;
-padding: 5rem calc((100vw -1300px) /2);
+padding: 5rem;
 background: #ffffff;
 color: #000000;
 `;
@@ -16,18 +16,27 @@ flex-wrap:wrap;
 align-items: center;
 justify-content: center;
 margin: 0 auto;
+width: 100%;
 `;
 
 export const ProductCard = styled.div`
 margin: 0 2rem;
 line-height: 1.5;
-width: 100%;
+width: 100vw;
+
+@media only screen and (min-width: 320px) and (max-width: 580px){
+
+}
 `;
 
 export const ProductImg = styled.img`
-height: 60vh;
+height: 50vh;
 min-width: 320px;
 max-width: 100%;
+
+@media only screen and (min-width: 320px) and (max-width: 580px){
+    height: auto;
+}
 `;
 
 export const ProductsHeading = styled.h1`
@@ -54,11 +63,17 @@ justify-content: center;
 align-items: center;
 padding: 1rem;
 text-align: center;
+width: 100%;
 `;
 
 export const ProductDesc = styled.p`
 max-width: 600px;
 margin-bottom: 1rem;
+
+@media only screen and (min-width: 320px) and (max-width: 580px){
+    width: 90vw;
+    text-align: left;
+}
 `;
 
 export const ProductPrice = styled.p`
@@ -84,7 +99,8 @@ font-family: 'Satisfy';
 color: black;
 font-size: clamp(2rem, 2.5vw, 3rem);
 text-align: center;
-padding-top: 2rem;
+margin: 2rem 0 5rem 0;
+
 `;
 
 export const AmountWrapper = styled.div`

@@ -12,7 +12,7 @@ export const About = () => {
         <>
         <Navbar/>
             <AboutContainer>
-                <AboutWrapper>
+            <AboutWrapper>
                 <AboutH1>Who We Are</AboutH1>
                 <AboutP>We are in our 3rd year of providing quality merchandise at fair prices. We hope to add you to our list of loyal customers and friends from all over the world.</AboutP>
                 <AboutP>We offer a great selection of Western Boots, Exotic Cowboy Boots, Work Boots, Casual Footwear, Western Wear, Western Accessories and Rugged Outdoor Wear.</AboutP>
